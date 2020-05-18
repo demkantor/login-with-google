@@ -18,11 +18,24 @@
   <body>
 
     <h1>Firebase is awesome!</h1>
+    <h2 id="title"></h2>
       
+    <input onchange="updatePost(event)">
+
 
       <button onclick="googleLogin()">
         Login with Google
       </button>
+
+      <hr>
+
+      <h2>Storage upload</h2>
+
+      <input type="file" onchange="uploadFile(this.files)">
+      
+      <hr>
+
+      <img id="imgUpload" src="" width="20vw">
 
   </body>
 </html>
